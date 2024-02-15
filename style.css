@@ -1,0 +1,176 @@
+body {
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#pasek {
+   /* Ustawienie pozycji na stałe */
+  top: 0; /* Ustawienie odstępu od góry na 0 */
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 1; /* Ustawienie z-index na 1, aby pasek był na wierzchu */
+}
+
+
+
+#btn1 {
+  background-color: rgb(210, 140, 47);
+  border-radius: 15px;
+  outline: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 45px; /* Nowa wysokość */
+  width: 150px; /* Nowa szerokość */
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#btn2 {
+  background-color: rgb(210, 140, 47);
+  border-radius: 15px;
+  outline: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 45px; /* Nowa wysokość */
+  width: 150px; /* Nowa szerokość */
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#pokemonName {
+  margin-left: 10px;
+  width: 200px;
+  height: 40px;
+  outline: none; /* Usuwa wyświetlanie obramowania po zaznaczeniu elementu */
+  border: 1px solid #ccc; /* Dodaje cienką szarą obramówkę */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  padding: 5px; /* Dodaje wewnętrzny margines */
+  box-sizing: border-box; /* Zapobiega dodawaniu wewnętrznego marginesu do szerokości elementu */
+  border-right: none;
+}
+
+#pasek img {
+  border: 0;
+  outline: 0;
+  background-color: white;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-right: 30%;
+  float: left;
+}
+
+#lupa {
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: white;
+  outline: 0;
+  width: 30px;
+  height: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+
+#pokemonSprite {
+ margin:auto;
+ align-items: center;
+  width:30vh;
+  height:30vh;
+ 
+}
+
+#pokemon_details{
+
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  font-family: 'Comfortaa', sans-serif;
+  
+}
+
+#pokemon_prostokat{
+  margin-top: 15vh;
+  background-color: white;
+  max-width: 20rem;
+  width:100%;
+  max-height: 50rem;
+  height:100%;
+  padding:1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+}
+#pokemon_prostokat:empty{
+  display:none;
+}
+#pokemon_prostokat img{
+max-width: 15rem;
+max-height:15rem;
+width:100%;
+}
+#pokemonContainer{
+  margin-top:30px;
+  margin-left:10%;
+}
+.pokemon {
+  margin:10px;
+  font-family: 'Comfortaa', sans-serif;
+  display: inline-block;
+  background-color: white;
+  max-width: 220px;
+  width: 100%;
+  
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#pasek_filtrowania {
+  position: fixed;
+  top: 120px;
+  right: 140px;
+  width: 400px; 
+  height: 50vh; 
+  background-color: white;
+  border-radius: 10px;
+  overflow-y: auto; 
+  display: flex;
+  flex-direction: column; 
+  
+}
+.filterCheckboxContainer {
+  display: flex;
+  justify-content: center; 
+}
+.filterCheckbox{
+  display: flex;
+  justify-content: flex-end;
+}
+
+ 
+
