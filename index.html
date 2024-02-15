@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="pasek_filtrowania">
+      <button onclick="applyFilters()">Apply Filters</button>
+      <label><input type="checkbox" class="filterCheckbox" value="Normal">Normal</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Fire">Fire</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Water">Water</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Grass">Grass</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Fighting">Fighting</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Poison">Poison</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Electric">Electric</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Ground">Ground</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Rock">Rock</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Psychic">Psychic</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Ice">Ice</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Bug">Bug</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Ghost">Ghost</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Steel">Steel</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Dragon">Dragon</label>
+      <label><input type="checkbox" class="filterCheckbox" value="Fairy">Fairy</label>
+  </div>
+  
+  
+    </div>
+    <div id="pasek">
+      <img src="pokemon.png" />
+      <button id="btn1" ></button>
+      <button id="btn2"></button>
+      <input type="text" id="pokemonName" placeholder="search">
+      <button id="lupa" onclick="fetchPokemon()" onkeydown="if(event.key === 'Enter') { fetchPokemon() }">
+        <img src="search.png" />
+    </button>
+    
+    </div>
+    <div id="pokemonContainer"></div>
+    
+    <div id="pokemon_details"><div id="pokemon_prostokat"></div></div>  
+  <script src="script.js"></script>
+  </body>
+</html>
